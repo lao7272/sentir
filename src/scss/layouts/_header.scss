@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #D4946F;
+    width: 100%;
+    padding: .8rem;
+    height: 4rem;
+    position: fixed;
+    top: 0;
+    ul {
+        li {
+            list-style: none;
+            display: inline-flex;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+}
