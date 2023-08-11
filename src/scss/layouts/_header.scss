@@ -1,19 +1,57 @@
-.navbar {
+@use "../abstracts" as *;
+.navbar-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #D4946F;
+    background-color: transparent;
+    color: #fff;
     width: 100%;
     padding: .8rem;
     height: 4rem;
     position: fixed;
     top: 0;
+    transition: background-color .5s;
+    z-index: 99;
     ul {
+        margin: 0 ;
         li {
             list-style: none;
             display: inline-flex;
             margin: 0 10px;
             cursor: pointer;
+            a {
+                font-weight: bold;
+                font-size: $text;
+                text-decoration: none;
+                color: #fff;
+                transition: all .3s;
+                &:hover{
+                    color: $secondaryColor;
+                }
+            }
         }
     }
+    .brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .brand-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #fff;
+            display: grid;
+            place-content: center;
+            color: #0000002f;
+        }
+        .brand-name {
+            justify-self: center;
+            font-size: 1.5rem;
+            font-family: $secondaryFont;
+        }
+    }
+}
+.scrolled {
+    background-color: $mainColor;
 }

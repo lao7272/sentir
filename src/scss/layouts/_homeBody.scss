@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+.home-body {
+    padding-top: 7rem;
+    min-height: 100vh;
+    background: $mainColor;
+    .home-body-section {
+        display: flex;
+        width: 50%;
+        margin: 0 auto;
+        align-items: center;
+        gap: 3rem;
+        .home-body-info {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            h3 {
+                font-size: 2rem;
+            }
+            p {
+                text-align: justify;
+            }
+        }
+        img {
+            width: 200px;
+            box-shadow: 10px -10px $primaryColor;
+            border-radius: 3px;
+        }
+    }
+}

@@ -1,6 +1,21 @@
-main {
+@use "../abstracts" as *;
+.carousel-img {
     height: 100vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/public/assets/2019_Lost_Draw_4_313413d9-2f73-48a3-a101-cc76af727279.jpg);
-    background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: start !important;
 }
+// .main-presentation {
+//     height: 100vh;
+//     background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/public/assets/gallery/sentir-1/main.jpg);
+//     background-size: cover;
+//     background-position: start;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     .main-title {
+//         font-size: $heading;
+//         color: #fff;
+//         text-shadow: 0 5px 10px #000;
+//     }
+// }
