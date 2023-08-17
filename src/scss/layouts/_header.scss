@@ -20,14 +20,14 @@
             margin: 0 10px;
             cursor: pointer;
             a {
-                font-weight: bold;
-                font-size: $text;
+                font-size: $subheading-2;
                 text-decoration: none;
-                color: #fff;
-                transition: all .3s;
-                &:hover{
-                    color: $secondaryColor;
-                }
+                color: #FFF;
+            }
+        }
+        .active{
+            .underline::after {
+                transform: scaleX(1);
             }
         }
     }
@@ -36,6 +36,8 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
+        color: #fff;
+        text-decoration: none;
         .brand-logo {
             width: 50px;
             height: 50px;

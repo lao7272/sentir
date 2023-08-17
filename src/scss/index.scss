@@ -1,5 +1,7 @@
-@use "./base/global.scss";
+@use "./abstracts/animations";
+@use "./base/global";
 @use "./layouts/header";
 @use "./layouts/main";
 @use "./layouts/homeBody";
-@use "./layouts/footer"
+@use "./layouts/community";
+@use "./layouts/footer";

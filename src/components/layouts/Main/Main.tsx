@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 export default function Main() {
   return (
     <Carousel className='h-100'>
-      <Carousel.Item interval={1500}>
+      <Carousel.Item interval={2000}>
         <div 
         className='d-block w-100 carousel-img' 
         style={{background: "linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/gallery/sentir-1/main.jpg)"}}>

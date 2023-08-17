@@ -5,6 +5,7 @@ export default function Footer() {
             <div className="footer-sections">
                 <div className='links'>
                     <h4>Contacto</h4>
+                    <p>+54 11 3459321</p>
                 </div>
                 <div className='links'>
                     <h4>Seguinos</h4>
