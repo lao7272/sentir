@@ -26,10 +26,10 @@ export default function Header() {
                     <div className='brand-name'>Sentir es existir</div>
                 </Link>
                 <ul>
-                    <li className={location.pathname === "/" ? "active" : ""}><Link className='underline' to="/">Inicio</Link></li>
-                    <li className={location.pathname === "/comunidad" ? "active" : ""}><Link className='underline' to="/comunidad">Comunidad</Link></li>
-                    <li className={location.pathname === "/nosotros" ? "active" : ""}><Link className='underline' to="/nosotros">Nosotros</Link></li>
-                    <li className={location.pathname === "/contacto" ? "active" : ""}><Link className='underline' to="/contacto">Contacto</Link></li>
+                    <li className={location.pathname === "/" ? "active" : ""}><Link className='underline-anim' to="/">Inicio</Link></li>
+                    <li className={location.pathname === "/comunidad" ? "active" : ""}><Link className='underline-anim' to="/comunidad">Comunidad</Link></li>
+                    <li className={location.pathname === "/nosotros" ? "active" : ""}><Link className='underline-anim' to="/nosotros">Nosotros</Link></li>
+                    <li ><a className='underline-anim' href='#footer'>Contacto</a></li>
                 </ul>
             </div>
         </div>

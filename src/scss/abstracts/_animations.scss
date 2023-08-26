@@ -1,8 +1,8 @@
-.underline {
+.underline-anim {
     width: max-content;
     position: relative;
 }
-.underline::after {
+.underline-anim::after {
     content: "";
     width: 100%;
     position: absolute;
@@ -14,6 +14,6 @@
     transform: scaleX(0);
     border-radius: 15px;
 }
-.underline:hover:after {
+.underline-anim:hover:after {
     transform: scaleX(1);
 }

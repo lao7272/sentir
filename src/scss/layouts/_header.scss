@@ -26,7 +26,7 @@
             }
         }
         .active{
-            .underline::after {
+            .underline-anim::after {
                 transform: scaleX(1);
             }
         }

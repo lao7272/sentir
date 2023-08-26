@@ -1,5 +1,62 @@
+@use "../abstracts" as *;
 .community {
     min-height: 100vh;
-    padding-top: 64px;
-    background-color: #B08969;
+    padding: 4.7rem 0;
+    background-color: #dd9f6a;
+    .community-card-container {
+        display: flex;
+        max-width: 95%;
+        margin: 0 auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        .community-card {
+            background-color: $secondaryColor;
+            width: 250px;
+            height: 370px;
+            border-radius: 4px;
+            overflow: hidden;
+
+            .card-img {
+                height: 60%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .card-description {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: .6rem;
+            }
+
+            .card-links {
+                margin-top: 1rem;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    width: 2.3rem;
+                    height: 2.3rem;
+                    border-radius: 50%;
+                    display: grid;
+                    place-content: center;
+                    svg {
+                        width: 1.8rem;
+                        cursor: pointer;
+                        transition: .3s all;
+                        fill: #232323;
+    
+                        &:hover {
+                            fill: #0000006b;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
