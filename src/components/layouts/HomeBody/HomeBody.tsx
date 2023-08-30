@@ -10,7 +10,7 @@ export default function HomeBody() {
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, quos eligendi odio eos tempore explicabo deleniti cum aliquid voluptatibus totam quis et cupiditate rem amet distinctio voluptate blanditiis nihil, asperiores exercitationem eveniet esse reiciendis. Temporibus minima quis veritatis aperiam commodi!
                     </p>
                 </div>
-                <div ref={ref}>
+                <div className='home-body-img' ref={ref}>
                     <img src="./assets/gallery/sentir-3/body.jpeg" alt="imagen" />
                 </div>
             </div>
