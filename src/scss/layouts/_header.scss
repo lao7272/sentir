@@ -1,4 +1,15 @@
-@use "../abstracts" as *;
+@use "../abstracts"as *;
+:root {
+    --hamburger-height: calc((var(--bar-height) * 3) + var(--hamburger-gap) * 2);
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    --bar-width: 1.8rem;
+    --bar-height: .23rem;
+    --hamburger-gap: .3rem;
+    --hamburger-margin: 1rem;
+    --foreground: #fff;
+    --background: #DD9F6A;
+    --animation-timing: .3s ease-in-out;
+}
 .navbar-2 {
     display: flex;
     justify-content: space-between;
@@ -11,26 +22,25 @@
     position: fixed;
     top: 0;
     transition: background-color .5s;
-    z-index: 99;
-    ul {
-        margin: 0 ;
+    z-index: 98;
+
+    .nav-desktop {
+        margin: 0;
+
         li {
             list-style: none;
             display: inline-flex;
             margin: 0 10px;
             cursor: pointer;
+
             a {
                 font-size: $subheading-2;
                 text-decoration: none;
                 color: #FFF;
             }
         }
-        .active{
-            .underline-anim::after {
-                transform: scaleX(1);
-            }
-        }
     }
+
     .brand {
         display: flex;
         justify-content: center;
@@ -38,6 +48,7 @@
         gap: 10px;
         color: #fff;
         text-decoration: none;
+
         .brand-logo {
             width: 50px;
             height: 50px;
@@ -47,11 +58,104 @@
             place-content: center;
             color: #0000002f;
         }
+
         .brand-name {
             justify-self: center;
             font-size: 1.5rem;
             font-family: $secondaryFont;
         }
+    }
+
+    .nav-mobile {
+        display: none;
+        z-index: 98;
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            gap: var(--hamburger-gap);
+            width: max-content;
+            cursor: pointer;
+            &::after,
+            &::before,
+            .bar {
+                content: "";
+                width: var(--bar-width);
+                height: var(--bar-height);
+                background-color: var(--foreground);
+                transition: all var(--animation-timing);
+                transform-origin: right center;
+                border-radius: 9999px;
+            }
+            .bar-active {
+                opacity: 0;
+                width: 0;
+            }
+        }
+        .hamburger-active {
+            --foreground: #DD9F6A;
+            --background: #FFEACE;
+            &::after {
+                rotate: 45deg;
+                translate: 0 calc(var(--bar-height) / 2);
+                width: var(--x-width);
+            }
+            &::before {
+                rotate: -45deg;
+                translate: 0 calc(var(--bar-height) / -2);
+                width: var(--x-width);
+            }
+        }
+    }
+    .sidebar {
+        align-self: flex-end;
+        transition: all var(--animation-timing);
+        padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+        background-color: #fff7ed;
+        width: 100%;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+        ul {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            li {
+                list-style: none;
+                text-align: center;
+                .underline-anim {
+                    text-decoration: none;
+                    color: $primaryColor;
+                    cursor: pointer;
+                    font-size: $subheading-2;
+                    &::after {
+                        background: $primaryColor;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar-visible {
+        translate: -100%;
+    }
+
+    @media (width < 700px) {
+        .nav-desktop {
+            display: none;
+        }
+
+        .nav-mobile {
+            display: block;
+        }
+    }
+}
+.active {
+    .underline-anim::after {
+        transform: scaleX(1);
     }
 }
 .scrolled {

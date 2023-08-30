@@ -4,10 +4,10 @@
     padding-top: 10rem;
     min-height: 100vh;
     background: $mainColor;
-
     .home-body-section {
+        width: 90%;
         display: flex;
-        width: 50%;
+        justify-content: center;
         margin: 0 auto 7rem auto;
         align-items: center;
         gap: 3rem;
@@ -16,7 +16,7 @@
             display: flex;
             flex-direction: column;
             gap: .5rem;
-
+            max-width: 400px;
             h3 {
                 color: #fff;
                 text-align: center;
@@ -34,17 +34,18 @@
             box-shadow: 10px -10px $primaryColor;
             border-radius: 3px;
         }
+        
     }
 
     .music-section {
         display: flex;
-        align-items: flex-end;
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 100vh;
+        min-height: 100vh;
         gap: 1rem;
         background-color: $secondaryColor;
+        padding: 3rem 1rem 0 1rem;
         .music-img {
             position: relative;
             z-index: 1;
@@ -85,7 +86,7 @@
     }
 
     .experience-section {
-        height: 100vh;
+        min-height: 100vh;
         display: grid;
         place-content: center;
         .exp-container {
@@ -118,6 +119,41 @@
                 place-content: center;
                 img {
                     width: 100%;
+                }
+            }
+        }
+    }
+    @media (width < 768px) {
+        .home-body-section {
+            width: 90%;
+            flex-direction: column;
+            .home-body-info {
+                max-width: 350px;
+                min-width: 300px;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        .music-section {
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            .music-img { 
+                img {
+                    max-width: 350px;
+                    min-width: 300px;
+                }
+            }
+        }
+        .experience-section {
+            padding: 5rem 1rem 0 1rem;
+            .exp-container {
+                flex-direction: column-reverse;
+                .exp-description{
+                    transform: translate(0, -8rem);
+                }
+                .exp-img {
+                    width: 350px;
                 }
             }
         }

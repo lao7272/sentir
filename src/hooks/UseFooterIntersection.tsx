@@ -3,4 +3,4 @@ import { IntersectionContext } from '../context/IntersectionProvider';
 const UseFooterIntersection = () => {
     return useContext(IntersectionContext);
 }
-export default UseFooterIntersection
+export default UseFooterIntersection;
