@@ -6,5 +6,6 @@
     background-position: start !important;
     @media (width < 768px) {
         background-position: center !important;
+        height: 60vh;
     }
 }

@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
-import Header from '../layouts/Header/Header'
-import Footer from '../layouts/Footer/Footer'
+import Header from '../Header/Header'
+import Footer from '../Footer/Footer'
 import WhatsappIcon from '../WhatsappIcon/WhatsappIcon'
 
 export default function Root() {

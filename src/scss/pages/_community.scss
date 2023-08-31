@@ -2,8 +2,10 @@
 .community {
     min-height: 100vh;
     padding: 4.7rem 0;
-    background-color: #dd9f6a;
+    background-color: $mainColor;
+    
     .community-card-container {
+        padding-top: 3rem;
         display: flex;
         max-width: 95%;
         margin: 0 auto;
@@ -11,12 +13,12 @@
         flex-wrap: wrap;
         gap: 3rem;
         .community-card {
+            box-shadow: rgba(50, 50, 93, 0.35) 0px 2px 5px -1px, rgba(0, 0, 0, 0.5) 0px 1px 3px -1px;
             background-color: $secondaryColor;
             width: 250px;
             height: 370px;
             border-radius: 4px;
             overflow: hidden;
-
             .card-img {
                 height: 60%;
                 overflow: hidden;

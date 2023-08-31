@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer'
-import useFooterIntersection from '../../../hooks/UseFooterIntersection';
+import useFooterIntersection from '../../hooks/UseFooterIntersection';
 
 export default function Footer() {
-    const { ref, inView } = useInView({threshold: .05});
+    const { ref, inView } = useInView();
     const intersection = useFooterIntersection();
     useEffect(() => {
         intersection?.setIntersection(inView);

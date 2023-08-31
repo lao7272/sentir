@@ -22,10 +22,10 @@ export default function Header() {
     return (
         <div>
             <div ref={navbarRef} className="navbar-2">
-                <Link className='brand' to="/">
-                    <div className="brand-logo">logo</div>
-                    <div className='brand-name'>Sentir es existir</div>
-                </Link>
+                <div className='brand'>
+                    <Link className="brand-logo" to="/">logo</Link>
+                    <Link className="brand-name" to="/">Sentir es existir</Link>
+                </div>
                 <ul className='nav-desktop'>
                     <li className={location.pathname === "/" ? "active" : ""}><Link className='underline-anim' to="/">Inicio</Link></li>
                     <li className={location.pathname === "/comunidad" ? "active" : ""}><Link className='underline-anim' to="/comunidad">Comunidad</Link></li>
@@ -38,8 +38,9 @@ export default function Header() {
                     </div>
                     <aside className={`sidebar ${visible ? "sidebar-visible" : ""}`}>
                         <nav className='navbar-mobile'>
-                            <div className="logo">
-
+                            <div className='brand'>
+                                <Link className="brand-logo" to="/">logo</Link>
+                                <Link className='brand-name' to="/">Sentir es existir</Link>
                             </div>
                             <ul>
                                 <li className={location.pathname === "/" ? "active" : ""}>

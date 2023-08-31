@@ -1,4 +1,3 @@
-// import { useEffect, useState } from 'react';
 import useFooterIntersection from '../../hooks/UseFooterIntersection';
 
 export default function WhatsappIcon() {
