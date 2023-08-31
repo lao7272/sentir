@@ -4,13 +4,13 @@ export default function HomeBody() {
     return (
         <div className="home-body">
             <div className={`home-body-section ${inView ? "show" : "hidden"}`}>
-                <div className="home-body-info">
+                <div className="home-body-info" ref={ref}>
                     <h3>¿Que hacemos?</h3>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, quos eligendi odio eos tempore explicabo deleniti cum aliquid voluptatibus totam quis et cupiditate rem amet distinctio voluptate blanditiis nihil, asperiores exercitationem eveniet esse reiciendis. Temporibus minima quis veritatis aperiam commodi!
                     </p>
                 </div>
-                <div className='home-body-img' ref={ref}>
+                <div className="home-body-img">
                     <img src="./assets/gallery/sentir-3/body.jpeg" alt="imagen" />
                 </div>
             </div>

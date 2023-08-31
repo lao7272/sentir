@@ -3,10 +3,13 @@ export default function About() {
         <div className="about">
             <div className="about-main">
                 <div className="about-main-description">
-
+                    <h3>Sobre Nosotros</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, error officia. Minus ipsam reiciendis dolorem ad aliquam at consequuntur ex!
+                    </p>
                 </div>
                 <div className="about-main-img">
-                    <img src="" alt=""/>
+                    <img src="./assets/gallery/sentir-1/coll-section-1.jpg" alt=""/>
                 </div>
             </div>
             <div className="about-description">

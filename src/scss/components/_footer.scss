@@ -20,7 +20,7 @@
             justify-content: center;
 
             h4 {
-                color: #86933D;
+                color: $tertiaryColor;
                 position: relative;
                 font-size: 1.3rem;
                 font-weight: 600;
@@ -36,11 +36,8 @@
                 bottom: 0;
                 left: 50%;
                 transform: translateX(-50%);
-                background: #86933d94;
+                background: #86933dbc;
                 z-index: 1;
-            }
-            p {
-                color: #000;
             }
             ul {
                 padding: 0;
@@ -56,20 +53,21 @@
 
                     a {
                         text-decoration: none;
-                        color: #000;
+                        color: #86933d94;
                         transition: all .3s;
+                        font-size: 1.1rem;
                         &:hover {
-                            color: #3333338c;
+                            color: $tertiaryColor;
                         }
                     }
                     .footer-social {
                         svg {
                             padding: 5px;
                             width: 40px;
-                            fill: #222222;
                             transition: all .3s;
+                            fill: #86933d94;
                             &:hover {
-                                fill: #000000a2;
+                                fill: $tertiaryColor;
                             }
                         }
 
@@ -105,7 +103,7 @@
             z-index: 1;
         }
     }
-    @media (width < 768px) {
+    @media (max-width: 500px) {
         .footer-sections {
             flex-direction: column;
             justify-content: center;

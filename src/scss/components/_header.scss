@@ -152,7 +152,7 @@
         translate: -100%;
     }
 
-    @media (width < 700px) {
+    @media (max-width: 768px) {
         .nav-desktop {
             display: none;
         }

@@ -4,7 +4,7 @@ export default function WhatsappIcon() {
 	const intersection = useFooterIntersection();
     return (
 		<div className='whatsapp-icon'>
-			<a href='https://google.com' target='_blank' className={`${intersection?.intersection ? "hidden" : ""}`}>
+			<a href='https://api.whatsapp.com/send?phone=5493548401102' target='_blank' className={`${intersection?.intersection ? "hidden" : ""}`}>
 				<svg version="1.1" id="Layer_1" xmlns="https://www.w3.org/2000/svg"
 					viewBox="0 0 308 308">
 					<g id="XMLID_468_">
