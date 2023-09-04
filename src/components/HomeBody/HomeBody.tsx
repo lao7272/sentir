@@ -20,10 +20,9 @@ export default function HomeBody() {
                     <img src="./assets/gallery/sentir-1/bg-removed.png" alt="imagen" />
                 </div>
                 <div className="music-description">
-                    <h3>Musica</h3>
+                    <h3>Música</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit iste cumque debitis non qui, veritatis, consectetur molestias ea at reicien itaque dolorum, facilis sint. Blanditiis similique fugiat repudiandae asperiores!
-
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit iste cumque debitis non qui, veritatis, consectetur molestias ea at reiciendis itaque dolorum, facilis sint. Blanditiis similique fugiat repudiandae asperiores!
+                    dolorum, facilis sint. Blanditiis similique fugiat repudiandae asperiores!
                     </p>
                 </div>
             </div>

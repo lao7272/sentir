@@ -57,7 +57,8 @@
             cursor: pointer;
 
             a {
-                font-size: $subheading-2;
+                font-weight: 600;
+                font-size: $text;
                 text-decoration: none;
                 color: #FFF;
             }
@@ -137,10 +138,11 @@
                 list-style: none;
                 text-align: center;
                 .underline-anim {
+
                     text-decoration: none;
                     color: $primaryColor;
                     cursor: pointer;
-                    font-size: $subheading-2;
+                    font-size: $text;
                     &::after {
                         background: $primaryColor;
                     }

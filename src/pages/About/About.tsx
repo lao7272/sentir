@@ -1,9 +1,10 @@
+
 export default function About() {
     return (
         <div className="about">
             <div className="about-main">
                 <div className="about-main-description">
-                    <h3>Sobre Nosotros</h3>
+                    <h3><i>Sobre Nosotros</i></h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, error officia. Minus ipsam reiciendis dolorem ad aliquam at consequuntur ex!
                     </p>
@@ -17,9 +18,7 @@ export default function About() {
                 <p></p>
             </div>
             <div className="about-history">
-                <div className="about-card">
-
-                </div>
+                <h3>Nuestra historia</h3>
             </div>
         </div>
     )

@@ -1,4 +1,7 @@
 @use "../abstracts" as *;
+.carousel-caption h3{
+    font-family: $tertiaryFont;
+}
 .carousel-img {
     height: 100vh;
     background-repeat: no-repeat !important;
@@ -9,3 +12,4 @@
         height: 60vh;
     }
 }
+

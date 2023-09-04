@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
-// $mainFont: 'Playfair Display', serif;
-// $mainFont: 'Raleway', sans-serif;
-// $mainFont: 'Merriweather', serif;
-$primaryFont: 'Edu SA Beginner', cursive;
+
+$primaryFont: 'Open Sans', sans-serif;
 $secondaryFont: 'Shadows Into Light', cursive;
+$tertiaryFont: 'Playfair Display', serif;
 $heading: 4rem;
-$subheading: 3rem;
+$subheading: 2.8rem;
 $subheading-2: 1.3rem; 
 $text: 1rem;
+
+@media (max-width: 768px) {
+    $subheading: 1.5rem;
+}

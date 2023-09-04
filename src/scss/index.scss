@@ -1,9 +1,9 @@
-@use "./abstracts/animations";
-@use "./base/global";
+@use "./animations/animations";
+@use "./global";
+@use "./components/header";
+@use "./components/footer";
+@use "./components/whatsapp";
+@use "./components/main";
 @use "./pages/homeBody";
 @use "./pages/community";
 @use "./pages/about";
-@use "./components/whatsapp";
-@use "./components/header";
-@use "./components/main";
-@use "./components/footer";

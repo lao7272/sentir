@@ -1,4 +1,5 @@
 @use "../abstracts" as *;
+
 .about {
     background: $mainColor;
     min-height: 100vh;
@@ -8,16 +9,18 @@
         display: flex;
         align-items: center;
         .about-main-description {
-            width: 40%;
+            width: 35%;
             height: 100%;
             padding: 1rem 2rem;
-            // box-shadow: 1.4rem 0 1rem 2rem $mainColor;
+            box-shadow: 1.4rem 0 1rem 2rem $mainColor;
             z-index: 1;
             display: grid;
             place-content: center;
 
             h3 {
                 font-size: $subheading;
+                font-family: $tertiaryFont;
+                color: #fff;
             }
             p {
                 font-size: $subheading-2;

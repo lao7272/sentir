@@ -1,32 +1,38 @@
 @use "../abstracts"as *;
 
 .home-body {
+
     padding-top: 10rem;
     min-height: 100vh;
     background: $mainColor;
+    p {
+        width: 330px;
+        text-align: left;
+        line-height: 1.80;
+    }
+    h3 {
+        font-weight: bold;
+        font-family: $tertiaryFont;
+        font-size: $subheading;
+    }
     .home-body-section {
-        width: 90%;
+        width: 70%;
+        padding: 3rem 1rem;
+        background: $secondaryColor;
         display: flex;
         justify-content: center;
         margin: 0 auto 7rem auto;
         align-items: center;
         gap: 3rem;
-
+        box-shadow: rgba(50, 50, 93, 0.35) 0px 2px 5px -1px, rgba(0, 0, 0, 0.5) 0px 1px 3px -1px;
         .home-body-info {
             display: flex;
             flex-direction: column;
             gap: .5rem;
             max-width: 400px;
             h3 {
-                color: #fff;
+                color: $tertiaryColor;
                 text-align: center;
-                font-size: $subheading;
-            }
-
-            p {
-                width: 300px;
-                line-height: 1.85;
-                text-align: left;
             }
         }
         .home-body-img {
@@ -81,14 +87,10 @@
         .music-description {
             width: 300px;
             h3 {
-                font-size: $subheading;
                 text-align: center;
                 color: #86933D;
             }
-            p {
-                line-height: 1.85;
-                text-align: left;
-            }
+            
         }
     }
 
@@ -101,9 +103,9 @@
             justify-content: center;
             align-items: center;
             .exp-description{
-                padding: 1.3rem;
+                padding: 2rem;
                 width: 350px;
-                height: 350px;
+                min-height: 350px;
                 background: $secondaryColor;
                 transform: translateX(6rem);
                 h3{
@@ -113,9 +115,10 @@
                     font-size: 2.5rem;
                 }
                 p {
-                    line-height: 1.85;
                     text-align: justify;
                     hyphens: auto;
+                    width: auto;
+                    margin: 0;
                 }
             }
             .exp-img {
@@ -132,14 +135,19 @@
     }
     @media (max-width: 768px) {
         padding-top: 5rem;
+        p {
+            width: 300px;
+        }
+        h3 {
+            font-size: 2.5rem;
+        }
         .home-body-section {
             min-height: 70vh;
             width: 90%;
             margin-top: 0;
             flex-direction: column;
             .home-body-info {
-                max-width: 350px;
-                min-width: 300px;
+                width: 100%;
                 align-items: center;
                 justify-content: center;
             }
@@ -165,7 +173,6 @@
                 .exp-description{
                     transform: translate(0, -8rem);
                     width: 300px;
-                    height: 300px;
                 }
                 .exp-img {
                     height: 400px;

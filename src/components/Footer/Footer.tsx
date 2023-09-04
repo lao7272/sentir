@@ -71,7 +71,7 @@ export default function Footer() {
                     <h4>Enlaces</h4>
                     <ul>
                         <li>
-                            <Link to="/inicio">Inicio</Link>
+                            <Link to="/">Inicio</Link>
                         </li>
                         <li>
                             <Link to="/comunidad">Comunidad</Link>
