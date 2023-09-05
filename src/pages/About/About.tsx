@@ -1,5 +1,6 @@
-
+import AboutSlider from "../../components/AboutSlider/AboutSlider";
 export default function About() {
+    
     return (
         <div className="about">
             <div className="about-main">
@@ -10,7 +11,7 @@ export default function About() {
                     </p>
                 </div>
                 <div className="about-main-img">
-                    <img src="./assets/gallery/sentir-1/coll-section-1.jpg" alt=""/>
+                    <img src="./assets/gallery/sentir-1/coll-section-1.jpg" alt="" />
                 </div>
             </div>
             <div className="about-description">
@@ -20,6 +21,7 @@ export default function About() {
             <div className="about-history">
                 <h3>Nuestra historia</h3>
             </div>
+            <AboutSlider/>
         </div>
     )
 }

@@ -10,7 +10,9 @@
 body {
     font-family: $primaryFont !important;
 }
-
+h3 {
+    font-family: $tertiaryFont;
+}
 .hidden {
     opacity: 0;
     transition: all .5s ease-in-out;

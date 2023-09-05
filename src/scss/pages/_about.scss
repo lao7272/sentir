@@ -1,13 +1,16 @@
-@use "../abstracts" as *;
+@use "../abstracts"as *;
 
 .about {
     background: $mainColor;
     min-height: 100vh;
     overflow: hidden;
+    padding-bottom: 5rem;
+
     .about-main {
         height: 100vh;
         display: flex;
         align-items: center;
+
         .about-main-description {
             width: 35%;
             height: 100%;
@@ -22,12 +25,83 @@
                 font-family: $tertiaryFont;
                 color: #fff;
             }
+
             p {
                 font-size: $subheading-2;
             }
         }
+
         .about-main-img {
             width: 50%;
         }
     }
+
+    .about-slider {
+        height: 70vh;
+        width: 80%;
+        margin: 0 auto;
+        .slick-slide{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            div {
+                width: 300px;
+            }
+            .about-card-1{
+                background: url(/assets/gallery/about/about-1.JPG);
+            }
+            .about-card-2{
+                background: url(/assets/gallery/about/about-2.jpg);
+            }
+            .about-card-3{
+                background: url(/assets/gallery/about/about-3.jpeg);
+            }
+            .about-card-4{
+                background: url(/assets/gallery/about/about-4.JPG);
+            }
+
+            .about-card {
+                display: flex !important;
+                justify-content: center !important;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 3px;
+                height: 400px;
+                box-shadow: rgba(50, 50, 93, .45) 0px 2px 5px -1px, rgba(0, 0, 0, 1) 0px 1px 3px -1px;
+                h3 {
+                    font-size: $subheading-2;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+        } 
+        .about-arrow {
+            width: 2.5rem;
+            height: 2.5rem;
+
+            svg {
+                fill: #ffffff61;
+                transition: fill .3s;
+
+                &:hover {
+                    fill: #fff;
+                }
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .right-arrow {
+            left: -3rem;
+        }
+
+        .left-arrow {
+            right: -3rem;
+        }
+    }
 }
+
