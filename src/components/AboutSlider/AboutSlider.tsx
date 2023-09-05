@@ -1,14 +1,19 @@
 import Slider from "react-slick";
 import { NextArrow, PrevArrow } from "../SliderArrows/SliderArrows";
 export default function AboutSlider() {
+    const arrowAttr = {
+        className: "",
+        style: {},
+        onClick: ():void => {}    
+    }
     const settings = {
         infinite: true,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
         initialSlide: 0,
-        nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>,
+        nextArrow: <NextArrow {...arrowAttr}/>,
+        prevArrow: <PrevArrow {...arrowAttr}/>,
         responsive: [
             {
                 breakpoint: 1024,
