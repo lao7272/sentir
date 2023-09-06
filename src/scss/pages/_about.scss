@@ -4,62 +4,66 @@
     background: $mainColor;
     min-height: 100vh;
     overflow: hidden;
-    padding-bottom: 5rem;
-
     .about-main {
         height: 100vh;
-        display: flex;
-        align-items: center;
         overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+        .about-main-img {
+            width: 60%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
         .about-main-description {
-            z-index: 0;
-            width: 35%;
-            height: 100%;
+            width: 40%;
             padding: 1rem 2rem;
-            box-shadow: 1.4rem 0 1rem 1rem $mainColor;
             display: grid;
             place-content: center;
-
             h3 {
-                font-size: $subheading;
-                font-family: $tertiaryFont;
+                font-size: $heading;
                 color: #fff;
             }
-
             p {
                 font-size: $subheading-2;
             }
         }
-
-        .about-main-img {
-            width: 50%;
-        }
+        
     }
     .about-history {
-        width: 50%;
-        min-height: 50vh;
+        height: 100vh;
+        width: 100%;
         background: $secondaryColor;
-        margin: 0 auto;
-        transform: translateY(-3.5rem);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        h3 {
-            color: $tertiaryColor;
-        }
-        p {
-            width: 60%;
-            text-align: justify;
+        display: grid;
+        place-content: center;
+        .about-history-wrapper {
+            width: 50%;
+            min-height: 50vh;
+            background: $mainColor;
+            margin: 0 auto;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            h3 {
+                color: #fff;
+            }
+            p {
+                width: 60%;
+                text-align: justify;
+                hyphens: auto;
+            }
         }
     }
     .about-slider {
         height: 70vh;
         width: 80%;
-        margin: 0 auto;
+        margin: 7rem auto;
         .slick-slide{
             display: flex;
             justify-content: center;
@@ -102,11 +106,11 @@
             height: 2.5rem;
 
             svg {
-                fill: #ffffff61;
+                fill: #00000061;
                 transition: fill .3s;
 
                 &:hover {
-                    fill: #fff;
+                    fill: #181818;
                 }
             }
 
@@ -131,28 +135,36 @@
     }
     @media (max-width: 768px) {
         .about-main {
-            flex-direction: column-reverse;
-            margin-bottom: 5rem;
             min-height: 100vh;
+            margin-bottom: 2.5rem;
+            display: block;
             .about-main-description {
+
                 width: 100%;
-                height: 50%;
                 box-shadow: none;
                 padding-top: 2rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3 {
+                    font-size: 2.5rem;
+                    text-align: center;
+                }
+                p {
+                    font-size: $text;
+                    width: 70%;
+                }
+                
             }
             .about-main-img {
                 width: 100%;
-                height: 500px;
-                img {
-                    width: 100%;
-                    object-fit: cover;
-                }
+                height: 70vh;
+                overflow: hidden;
             }
-        
+            
         }
-        .about-history {
+        .about-history .about-history-wrapper {
             width: 80%;
-            transform: translateY(0);
             margin-bottom: 5rem;
             p{
                 width: 80%;

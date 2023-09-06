@@ -21,7 +21,7 @@ export default function Header() {
     }, [window.scrollY]);
     return (
         <div>
-            <div ref={navbarRef} className="navbar-2">
+            <div ref={navbarRef} className="navbar-container">
                 <div className='brand'>
                     <Link className="brand-logo" to="/">logo</Link>
                     <Link className="brand-name" to="/">Sentir es existir</Link>
