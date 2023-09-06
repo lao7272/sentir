@@ -10,13 +10,13 @@
         height: 100vh;
         display: flex;
         align-items: center;
-
+        overflow: hidden;
         .about-main-description {
+            z-index: 0;
             width: 35%;
             height: 100%;
             padding: 1rem 2rem;
-            box-shadow: 1.4rem 0 1rem 2rem $mainColor;
-            z-index: 1;
+            box-shadow: 1.4rem 0 1rem 1rem $mainColor;
             display: grid;
             place-content: center;
 
@@ -35,7 +35,27 @@
             width: 50%;
         }
     }
-
+    .about-history {
+        width: 50%;
+        min-height: 50vh;
+        background: $secondaryColor;
+        margin: 0 auto;
+        transform: translateY(-3.5rem);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        h3 {
+            color: $tertiaryColor;
+        }
+        p {
+            width: 60%;
+            text-align: justify;
+        }
+    }
     .about-slider {
         height: 70vh;
         width: 80%;
@@ -43,27 +63,26 @@
         .slick-slide{
             display: flex;
             justify-content: center;
-            gap: 1rem;
             margin: 1rem 0;
             div {
-                width: 300px;
+                width: 22vw;
             }
             .about-card-1{
-                background: url(/assets/gallery/about/about-1.JPG);
+                background: url(/assets/gallery/about/slider-1.JPG);
             }
             .about-card-2{
-                background: url(/assets/gallery/about/about-2.jpg);
+                background: url(/assets/gallery/about/slider-2.jpg);
             }
             .about-card-3{
-                background: url(/assets/gallery/about/about-3.jpeg);
+                background: url(/assets/gallery/about/slider-3.jpeg);
             }
             .about-card-4{
-                background: url(/assets/gallery/about/about-4.JPG);
+                background: url(/assets/gallery/about/slider-4.JPG);
             }
 
             .about-card {
-                display: flex !important;
-                justify-content: center !important;
+                display: flex;
+                align-items: center;
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -72,6 +91,7 @@
                 box-shadow: rgba(50, 50, 93, .45) 0px 2px 5px -1px, rgba(0, 0, 0, 1) 0px 1px 3px -1px;
                 h3 {
                     font-size: $subheading-2;
+                    margin-top: 1rem;
                     color: #fff;
                     text-align: center;
                 }
@@ -101,6 +121,65 @@
 
         .left-arrow {
             right: -3rem;
+        }
+    }
+    @media (max-width: 1024px) {
+        .about-slider .slick-slide div {
+            width: 30vw;
+        }
+        
+    }
+    @media (max-width: 768px) {
+        .about-main {
+            flex-direction: column-reverse;
+            margin-bottom: 5rem;
+            min-height: 100vh;
+            .about-main-description {
+                width: 100%;
+                height: 50%;
+                box-shadow: none;
+                padding-top: 2rem;
+            }
+            .about-main-img {
+                width: 100%;
+                height: 500px;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        
+        }
+        .about-history {
+            width: 80%;
+            transform: translateY(0);
+            margin-bottom: 5rem;
+            p{
+                width: 80%;
+            }
+        }
+        .about-slider {
+            .slick-slide div {
+                width: 35vw;
+            }
+        }
+    }
+    @media (max-width: 500px) {
+        .about-slider {
+            width: 90%;
+            .slick-slide div {
+                width: 70vw;
+            }
+            .about-arrow {
+                width: 2rem;
+                height: 2rem;
+            }
+            .right-arrow {
+                left: 0;
+            }
+            .left-arrow {
+                right: 0;
+            }
         }
     }
 }

@@ -2,9 +2,9 @@ import {MouseEventHandler, CSSProperties} from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 interface ArrowProps {
-    className: string,
-    onClick: MouseEventHandler<HTMLDivElement>,
-    style: CSSProperties
+    className?: string,
+    onClick?: MouseEventHandler<HTMLDivElement>,
+    style?: CSSProperties
 }
 export function NextArrow({onClick, style, className}: ArrowProps) {
     return (
