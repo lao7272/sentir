@@ -1,8 +1,12 @@
-.whatsapp-icon {
+@use "../abstracts" as *;
+.instagram-icon {
     .hidden{
         transform: scale(0.1);
     }
     a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         bottom: 1rem;
         right: 1rem;
@@ -10,18 +14,12 @@
         width: 3rem;
         height: 3rem;
         border-radius: 50%;
-        display: grid;
-        place-content: center;
-        background: #40e85e;
         cursor: pointer;
-        box-shadow: .1rem .1rem .2rem #535353c9;
+        background: #0000004a;
         transition: all .3s;
-        &:hover,&:focus {
-            box-shadow: none;
-        }
         svg {
-            width: 1.6rem;
-            fill: #fff;
+            width: 70%;
+            fill: $secondaryColor;
         }
     }
 }

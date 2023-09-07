@@ -34,7 +34,7 @@
         
     }
     .about-history {
-        height: 100vh;
+        height: 90vh;
         width: 100%;
         background: $secondaryColor;
         display: grid;
@@ -63,7 +63,7 @@
     .about-slider {
         height: 70vh;
         width: 80%;
-        margin: 7rem auto;
+        margin: 5rem auto 7rem auto;
         .slick-slide{
             display: flex;
             justify-content: center;
@@ -165,7 +165,6 @@
         }
         .about-history .about-history-wrapper {
             width: 80%;
-            margin-bottom: 5rem;
             p{
                 width: 80%;
             }

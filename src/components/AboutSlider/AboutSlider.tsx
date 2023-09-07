@@ -31,13 +31,13 @@ export default function AboutSlider() {
         <div className="about-slider">
             <Slider {...settings}>
                 <div className="about-card about-card-1">
-                    <h3>Sentir 1</h3>
+                    <h3>Sentir 1.0</h3>
                 </div>
                 <div className="about-card about-card-2">
-                    <h3>Sentir 2</h3>
+                    <h3>Sentir 2.0</h3>
                 </div>
                 <div className="about-card about-card-3">
-                    <h3>Sentir 3</h3>
+                    <h3>Sentir 3.0</h3>
                 </div>
                 <div className="about-card about-card-4">
                     <h3>Sentir(nos)</h3>

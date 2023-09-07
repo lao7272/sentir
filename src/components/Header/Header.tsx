@@ -23,13 +23,13 @@ export default function Header() {
         <div>
             <div ref={navbarRef} className="navbar-container">
                 <div className='brand'>
-                    <Link className="brand-logo" to="/">logo</Link>
+                    <Link className="brand-logo" to="/"><img src="./assets/icon/icon.png" alt="" /></Link>
                     <Link className="brand-name" to="/">Sentir es existir</Link>
                 </div>
                 <ul className='nav-desktop'>
                     <li className={location.pathname === "/" ? "active" : ""}><Link className='underline-anim' to="/">Inicio</Link></li>
                     <li className={location.pathname === "/comunidad" ? "active" : ""}><Link className='underline-anim' to="/comunidad">Comunidad</Link></li>
-                    <li className={location.pathname === "/nosotros" ? "active" : ""}><Link className='underline-anim' to="/nosotros">Nosotros</Link></li>
+                    <li className={location.pathname === "/nosotros" ? "active" : ""}><Link className='underline-anim' to="/nosotros">Historia</Link></li>
                     <li ><a className='underline-anim' href='#footer'>Contacto</a></li>
                 </ul>
                 <div className="nav-mobile">
@@ -39,7 +39,7 @@ export default function Header() {
                     <aside className={`sidebar ${visible ? "sidebar-visible" : ""}`}>
                         <nav className='navbar-mobile'>
                             <div className='brand'>
-                                <Link className="brand-logo" to="/">logo</Link>
+                                <Link className="brand-logo" to="/"><img src="./assets/icon/icon.png" alt="" /></Link>
                                 <Link className='brand-name' to="/">Sentir es existir</Link>
                             </div>
                             <ul>
@@ -50,7 +50,7 @@ export default function Header() {
                                     <Link onClick={() => setVisible(false)} className='underline-anim' to="/comunidad">Comunidad</Link>
                                 </li>
                                 <li className={location.pathname === "/nosotros" ? "active" : ""}>
-                                    <Link onClick={() => setVisible(false)} className='underline-anim' to="/nosotros">Nosotros</Link>
+                                    <Link onClick={() => setVisible(false)} className='underline-anim' to="/nosotros">Historia</Link>
                                 </li>
                                 <li >
                                     <a onClick={() => setVisible(false)} className='underline-anim' href='#footer'>Contacto</a>
