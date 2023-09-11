@@ -22,7 +22,7 @@ export default function HomeBody() {
                 <div className="music-description">
                     <h3>Música</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit iste cumque debitis non qui, veritatis, consectetur molestias ea at reicien itaque dolorum, facilis sint. Blanditiis similique fugiat repudiandae asperiores!
-                    dolorum, facilis sint. Blanditiis similique fugiat repudiandae asperiores!
+                        dolorum, facilis sint. Blanditiis similique fugiat repudiandae asperiores!
                     </p>
                 </div>
             </div>
@@ -32,7 +32,19 @@ export default function HomeBody() {
                         <h3>
                             Experiencia
                         </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda asperiores temporibus nostrum eius consectetur quisquam beatae consequuntur labore sed totam quaerat saepe, doloremque odit illum pariatur dignissimos qui voluptates.</p>
+                        <p>Te invitamos a cerrar los ojos y abrir los sentidos. </p>
+
+                        <p>Sentir desde la multisensorialidad que nos abarca. </p>
+
+                        <p>Prestar atención a cada instrumento, a cada sonido, a cada artista vinculado/a con su pasión. </p>
+
+                        <p>Sentir desde los miles de ángulos,
+                            Sentir desde la amorosa simpleza de darle permiso
+
+                            El ingreso a una sensación, a una emoción. </p>
+                        <p>Sentir como fuerza vital, así poder conectar con el
+
+                            Deseo y placer real.</p>
                     </div>
                     <div className="exp-img">
                         <img src="./assets/gallery/sentir-3/experience.jpeg" alt="" />
