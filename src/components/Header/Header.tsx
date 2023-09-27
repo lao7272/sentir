@@ -21,6 +21,7 @@ export default function Header() {
         }
     }, [window.scrollY]);
     useEffect(() => {
+        window.scrollTo(0, 0);
         if(location.pathname === "/comunidad") {
             setHaderColor("navbar-alt");
         } else {

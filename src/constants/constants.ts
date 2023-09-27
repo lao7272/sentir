@@ -3,7 +3,9 @@ const homeSlider:string[] = [
     "/assets/gallery/home/slider/main-1.jpg",
     "/assets/gallery/home/slider/main-2.JPG",
     "/assets/gallery/home/slider/main-3.jpg",
-    "/assets/gallery/home/slider/main-4.jpg"
+    "/assets/gallery/home/slider/main-4.jpg",
+    "/assets/gallery/home/slider/main-5.JPG",
+    "/assets/gallery/home/slider/main-6.JPG",
 ];
 const community:Section[] = [
     {
@@ -24,7 +26,7 @@ const community:Section[] = [
         section: 2
     },
     {
-        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-2.jpg",
+        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-9.jpg",
         section: 4
     },
     {
@@ -40,7 +42,7 @@ const community:Section[] = [
         section: 2
     },
     {
-        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-5.jpg",
+        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-7.jpg",
         section: 4
     },
     {
@@ -92,7 +94,7 @@ const community:Section[] = [
         section: 3
     },
     {
-        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-9.jpg",
+        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-6.jpg",
         section: 4
     },
     {

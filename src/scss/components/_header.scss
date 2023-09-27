@@ -151,18 +151,34 @@
 .navbar-alt {
     color: $primaryColor;
     background: #fff7ed;
-    .brand {
-        .brand-name {
+    .brand .brand-name {
+        color: $primaryColor;
+    }
+    .nav-desktop li {
+        a {
             color: $primaryColor;
         }
+        .underline-anim::after {
+            background-color: $primaryColor;
+        }
     }
-    .nav-desktop {
-        li {
-            a {
-                color: $primaryColor;
-            }
-            .underline-anim::after {
-                background-color: $primaryColor;
+    
+    .nav-mobile .hamburger {
+        &::after,
+        &::before,
+        .bar {
+            background-color: var(--background);
+        }
+    }
+    .sidebar {
+        background-color: $primaryColor;
+        .brand .brand-name {
+            color: #fff;
+        }
+        ul li .underline-anim {
+            color: #fff;
+            &::after {
+                background: #fff;
             }
         }
     }
