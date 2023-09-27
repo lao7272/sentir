@@ -1,12 +1,6 @@
-import { createContext, ReactNode, useState, Dispatch, SetStateAction } from "react";
-interface ContextProviderProps {
-    children: ReactNode;
-}
-interface IntersectionContext {
-    intersection: boolean
-    setIntersection: Dispatch<SetStateAction<boolean>>
-}
-export const IntersectionContext = createContext<IntersectionContext | undefined>(undefined);
+import { createContext, useState} from "react";
+import { IntersectionContext as intersectionContext, ContextProviderProps } from '../types/types'
+export const IntersectionContext = createContext<intersectionContext | undefined>(undefined);
 
 export const IntersectionProvider = ({ children }:ContextProviderProps) => {
     const [ intersection, setIntersection ] = useState(false);

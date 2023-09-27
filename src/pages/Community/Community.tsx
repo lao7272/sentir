@@ -4,14 +4,15 @@ import { Section } from '../../types/types';
 export default function Community() {
     const [sections, setSections] = useState<Section[]>(community);
     const [sectionIndex, setSectionIndex] = useState<number>(-1);
+
     const sectionFilter = (section: number) => {
         setSectionIndex(section);
-        if(section === -1) {
-            setSections(() => community);
+        if (section === -1) {
+            setSections(community);
             return;
         }
         const newSections: Section[] = community.filter(s => s.section === section);
-        setSections(() => newSections);
+        setSections(newSections);
     }
     return (
         <div className="community">
@@ -30,7 +31,9 @@ export default function Community() {
                 {
                     sections.map((e, i) => {
                         return (
-                            <div key={`${i}-community`} className="community-card">
+                            <div
+                                key={`${i}-community`}
+                                className={`community-card`}>
                                 <div className="card-img">
                                     <img src={e.image} alt="image" />
                                 </div>

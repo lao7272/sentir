@@ -48,7 +48,7 @@
             height: 400px;
             border-radius: 4px;
             overflow: hidden;
-            animation: show-card 1s ease;
+            animation: show-card .7s ease;
             .card-img img {
                 width: 100%;
             }
@@ -59,9 +59,11 @@
     0% {
         transform: translateY(3rem);
         opacity: 0;
+        filter: blur(3px);
     }
-    50% {
+    100% {
         transform: translateY(0);
         opacity: 1;
+        filter: blur(0px);
     }
 }

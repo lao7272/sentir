@@ -13,8 +13,8 @@ export default function HomeBody() {
                     <p>
                         El propósito es invitar a la conciencia, al presente absoluto.
                     </p>
-                    <p>Sentí desde la multisensorialidad que nos abarca.</p>
-                    <p>¿Te animas?</p>
+                    <p>Sentir desde la multisensorialidad que nos abarca.</p>
+                    <p><b>¿Te animas?</b></p>
                 </div>
                 <div className="home-body-img">
                     <img src="./assets/gallery/home/body.jpeg" alt="imagen" />
@@ -27,42 +27,48 @@ export default function HomeBody() {
                 </div>
                 <div className="art-description">
                     <h3>Arte</h3>
-                    <p>Sentir busca generar un espacio para conectar con el arte
-                        y cuando hablamos de conexión
-                        es poder observar, registrar, mirar todos los ángulos
-
-                        observar que emoción trae a tu cuerpo
-                        a qué recuerdo te lleva
-                        o a que lugares va tu imaginación
-
-                        cerrar los ojos para escuchar algún instrumento, abrir la creatividad viendo esa imagen o cuadro , abrir los sentidos en cada pincelada
-                        dejarse atravesar siendo consciente de que cada uno/a transmitió su sentir, su experiencia desorden o paz mental en algo tangible para que alguien más pueda apreciar.
-
+                    <p>
+                        Sentir busca generar un espacio para conectar con el arte.
+                        y cuando hablamos de conexión,
+                        es poder observar, registrar, mirar todos los ángulos.
                     </p>
+                    <p>
+                        Observar que emociones trae a tu cuerpo,
+                        a qué recuerdo te lleva,
+                        o a que lugares va tu imaginación.
+                    </p>
+                    <p>
+                        Cerrar los ojos para escuchar algún instrumento, abrir la creatividad viendo esa imagen o cuadro , abrir los sentidos en cada pincelada.
+                    </p>
+                    <p>
+                        Dejarse atravesar siendo consciente de que cada uno/a transmitió su sentir, su experiencia, desorden o paz mental en algo tangible para que alguien más pueda apreciar.
+                    </p>
+
+
                 </div>
             </div>
             <div className="experience-section">
                 <div className="exp-container">
                     <div className="exp-description">
-                        <h3>
-                            Experiencia
-                        </h3>
-                        <p>Te invitamos a cerrar los ojos y abrir los sentidos. </p>
+                        <h3>Experiencia</h3>
+                        <p>
+                            Te invitamos a ser parte de esta hermosa comunidad
+                            donde sentirse artista es prioridad,
+                            donde sentir en libertad no entra en duda,
+                            donde el respeto está ante todo,
+                            y el registrarnos nos invade.
+                        </p>
+                        <p>
+                            Dónde nuestros 5 sentidos se alteran
+                            y nuestro rol es habitarlo y compartirlo.
+                        </p>
+                        <p>
+                            En fin… ¿Nos encontramos para disfrutar(nos)?
+                        </p>
 
-                        <p>Sentir desde la multisensorialidad que nos abarca. </p>
-
-                        <p>Prestar atención a cada instrumento, a cada sonido, a cada artista vinculado/a con su pasión. </p>
-
-                        <p>Sentir desde los miles de ángulos,
-                            Sentir desde la amorosa simpleza de darle permiso
-
-                            El ingreso a una sensación, a una emoción. </p>
-                        <p>Sentir como fuerza vital, así poder conectar con el
-
-                            Deseo y placer real.</p>
                     </div>
                     <div className="exp-img">
-                        <img src="./assets/gallery/home/experience.jpeg" alt=""/>
+                        <img src="./assets/gallery/home/experience.jpeg" alt="" />
                     </div>
                 </div>
             </div>
