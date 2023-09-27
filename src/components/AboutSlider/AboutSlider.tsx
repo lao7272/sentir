@@ -42,6 +42,9 @@ export default function AboutSlider() {
                 <div className="about-card about-card-4">
                     <h3>Sentir(nos)</h3>
                 </div>
+                <div className="about-card about-card-5">
+                    <h3>Sentir en Konsert</h3>
+                </div>
             </Slider>
         </div>
     )

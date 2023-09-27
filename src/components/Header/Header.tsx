@@ -3,7 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 export default function Header() {
     const location = useLocation();
     const navbarRef: RefObject<HTMLDivElement> = useRef(null);
-    const [visible, setVisible] = useState<boolean>(false)
+    const [visible, setVisible] = useState<boolean>(false);
+    const [headerColor, setHaderColor] = useState<string>("");
     useEffect(() => {
         const changeNavbarColor = () => {
             if (!navbarRef.current) return;
@@ -19,9 +20,16 @@ export default function Header() {
             window.removeEventListener("scroll", changeNavbarColor);
         }
     }, [window.scrollY]);
+    useEffect(() => {
+        if(location.pathname === "/comunidad") {
+            setHaderColor("navbar-alt");
+        } else {
+            setHaderColor("");
+        }
+    }, [location.pathname]);
     return (
         <div>
-            <div ref={navbarRef} className="navbar-container">
+            <div ref={navbarRef} className={`navbar-container ${headerColor}`}>
                 <div className='brand'>
                     <Link className="brand-logo" to="/"><img src="./assets/icon/icon.png" alt="" /></Link>
                     <Link className="brand-name" to="/">Sentir es existir</Link>

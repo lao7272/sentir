@@ -1,17 +1,26 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer'
 import useFooterIntersection from '../../hooks/UseFooterIntersection';
+import { useLocation } from 'react-router-dom'
 
 export default function Footer() {
     const { ref, inView } = useInView();
+    const [footerColor, setFooterColor] = useState<string>("")
+    const location = useLocation();
     const intersection = useFooterIntersection();
     useEffect(() => {
         intersection?.setIntersection(inView);
     }, [inView]);
-    
+    useEffect(() => {
+        if(location.pathname === "/comunidad") {
+            setFooterColor("footer-alt");
+        } else {
+            setFooterColor("");
+        }
+    }, [location.pathname]);
     return (
-        <div ref={ref} className="footer" id='footer'>
+        <div ref={ref} className={`footer ${footerColor}`} id='footer'>
             <div className="footer-sections">
                 <div className='links'>
                     <h4>Contacto</h4>

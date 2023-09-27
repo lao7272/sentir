@@ -7,6 +7,7 @@ import Root from "./components/Root/Root";
 import About from "./pages/About/About";
 import Community from "./pages/Community/Community";
 import { IntersectionProvider } from "./context/IntersectionProvider";
+import { AlternativeColorProvider } from "./context/AlternativeColorProvider";
 const router = createBrowserRouter([{
   path: "/",
   element: <Root/>,
@@ -29,9 +30,11 @@ function App() {
 
   return (
     <>
-      <IntersectionProvider>
-        <RouterProvider router={router} />
-      </IntersectionProvider>
+      <AlternativeColorProvider>
+        <IntersectionProvider>
+          <RouterProvider router={router} />
+        </IntersectionProvider>
+      </AlternativeColorProvider>
     </>
   )
 }

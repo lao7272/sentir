@@ -138,7 +138,6 @@
     .sidebar-visible {
         translate: -100%;
     }
-
     @media (max-width: 768px) {
         .nav-desktop {
             display: none;
@@ -149,13 +148,35 @@
         }
     }
 }
+.navbar-alt {
+    color: $primaryColor;
+    background: #fff7ed;
+    .brand {
+        .brand-name {
+            color: $primaryColor;
+        }
+    }
+    .nav-desktop {
+        li {
+            a {
+                color: $primaryColor;
+            }
+            .underline-anim::after {
+                background-color: $primaryColor;
+            }
+        }
+    }
+}
 .active {
     .underline-anim::after {
         transform: scaleX(1);
     }
 }
-.scrolled {
+.navbar-container.scrolled {
     background-color: $mainColor;
+}
+.navbar-alt.scrolled {
+    background-color: #fff7ed;
 }
 .brand-logo {
     text-decoration: none;

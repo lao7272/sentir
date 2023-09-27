@@ -113,3 +113,45 @@
         }
     }
 }
+.footer-alt {
+    background-color: $mainColor;
+    .footer-sections {
+
+        .links {
+
+            h4 {
+                color: #fff;
+            }
+
+            h4::after {
+                background: #ffffffcc;
+            }
+            ul {
+                li {
+                    a {
+                        color: #ffffff94;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                    .footer-social {
+                        svg {
+                            fill: #ffffff94;
+                            &:hover {
+                                fill: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-legal {
+        .footer-legal-copyright {
+            color: #ffffffaa;
+        }
+        .footer-legal-copyright::after {
+            background: #ffffff52;
+        }
+    }
+}
