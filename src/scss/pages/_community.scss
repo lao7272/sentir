@@ -1,9 +1,10 @@
-@use "../abstracts" as *;
+@use "../abstracts"as *;
+
 .community {
     min-height: 100vh;
     padding: 6rem 0 4.7rem 0;
     background-color: #fff7ed;
-    
+
     .community-nav {
         display: flex;
         justify-content: center;
@@ -12,6 +13,7 @@
         row-gap: 1rem;
         max-width: 90%;
         margin: 0 auto;
+
         .community-section {
             font-family: $tertiaryFont;
             font-size: 1.2rem;
@@ -25,14 +27,17 @@
             padding: .6rem .8rem;
             background: #96969613;
             border-radius: 1rem;
+
             &:hover {
                 color: $primaryColor;
             }
         }
+
         .active {
             color: $primaryColor;
         }
     }
+
     .community-card-container {
         padding-top: 3rem;
         display: flex;
@@ -41,6 +46,7 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 3rem;
+
         .community-card {
             box-shadow: rgba(50, 50, 93, 0.35) 0px 2px 5px -1px, rgba(0, 0, 0, 0.5) 0px 1px 3px -1px;
             background-color: $secondaryColor;
@@ -48,13 +54,13 @@
             height: 400px;
             border-radius: 4px;
             overflow: hidden;
-            animation: show-card .7s ease;
             .card-img img {
                 width: 100%;
             }
         }
     }
 }
+
 @keyframes show-card {
     0% {
         transform: translateY(3rem);
