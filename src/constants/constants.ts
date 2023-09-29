@@ -1,9 +1,9 @@
 import {Section} from '../types/types'
 const homeSlider:string[] = [
     "/assets/gallery/home/slider/main-1.jpg",
-    "/assets/gallery/home/slider/main-2.JPG",
-    "/assets/gallery/home/slider/main-3.jpg",
     "/assets/gallery/home/slider/main-4.jpg",
+    "/assets/gallery/home/slider/main-3.jpg",
+    "/assets/gallery/home/slider/main-2.JPG",
     "/assets/gallery/home/slider/main-5.JPG",
     "/assets/gallery/home/slider/main-6.JPG",
 ];
@@ -70,7 +70,7 @@ const community:Section[] = [
         section: 2
     },
     {
-        image: "./assets/gallery/community/sentir-1/sentir-1.0-9.jpg",
+        image: "./assets/gallery/community/sentir-1/sentir-1.0-8.jpg",
         section: 0
     },
     {

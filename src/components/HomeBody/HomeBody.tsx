@@ -43,8 +43,14 @@ export default function HomeBody() {
                     <p>
                         Dejarse atravesar siendo consciente de que cada uno/a transmitió su sentir, su experiencia, desorden o paz mental en algo tangible para que alguien más pueda apreciar.
                     </p>
-
-
+                </div>
+            </div>
+            <div className="video-section">
+                <h3>¿Que es sentir?</h3>
+                <div className='video-container'>
+                    <video controls>
+                        <source src="/assets/gallery/home/sentir-agua-original.MP4" type="video/mp4" />
+                    </video>
                 </div>
             </div>
             <div className="experience-section">

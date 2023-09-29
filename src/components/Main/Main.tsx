@@ -12,8 +12,7 @@ export default function Main() {
                 style={{ background: `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${image})` }}>
               </div>
               <Carousel.Caption>
-                <h3>Slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h3>Sentite Artista</h3>
               </Carousel.Caption>
             </Carousel.Item>
           )
