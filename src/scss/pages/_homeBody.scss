@@ -23,17 +23,16 @@
         justify-content: center;
         margin: 0 auto 7rem auto;
         align-items: center;
-        gap: 3rem;
+        gap: 2rem;
         box-shadow: rgba(50, 50, 93, 0.35) 0px 2px 5px -1px, rgba(0, 0, 0, 0.5) 0px 1px 3px -1px;
+        h3 {
+            color: $tertiaryColor;
+            text-align: center;
+        }
         .home-body-info {
             display: flex;
             flex-direction: column;
-            gap: .5rem;
             max-width: 400px;
-            h3 {
-                color: $tertiaryColor;
-                text-align: center;
-            }
         }
         .home-body-img {
             width: 220px;

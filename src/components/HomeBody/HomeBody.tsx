@@ -4,17 +4,19 @@ export default function HomeBody() {
     return (
         <div className="home-body">
             <div className={`home-body-section ${inView ? "show" : "hidden"}`}>
-                <div className="home-body-info" ref={ref}>
+                <div>
                     <h3>¿Que hacemos?</h3>
-                    <p>
-                        Sentir es existir es un evento  creado desde el amor,
-                        un espacio para animarse a conectar y ser atravesado/a por nuestro sentir.
-                    </p>
-                    <p>
-                        El propósito es invitar a la conciencia, al presente absoluto.
-                    </p>
-                    <p>Sentir desde la multisensorialidad que nos abarca.</p>
-                    <p><b>¿Te animas?</b></p>
+                    <div className="home-body-info" ref={ref}>
+                        <p>
+                            Sentir es existir es un evento  creado desde el amor,
+                            un espacio para animarse a conectar y ser atravesado/a por nuestro sentir.
+                        </p>
+                        <p>
+                            El propósito es invitar a la conciencia, al presente absoluto.
+                        </p>
+                        <p>Sentir desde la multisensorialidad que nos abarca.</p>
+                        <p><b>¿Te animas?</b></p>
+                    </div>
                 </div>
                 <div className="home-body-img">
                     <img src="./assets/gallery/home/body.jpeg" alt="imagen" />

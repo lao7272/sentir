@@ -34,7 +34,8 @@
         
     }
     .about-history {
-        height: 90vh;
+        padding: 4rem 1rem;
+        min-height: 90vh;
         width: 100%;
         background: $secondaryColor;
         display: grid;
@@ -49,13 +50,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 1rem;
-            h3 {
+            padding: 2rem 1rem;
+            gap: 1rem;
+            h3, h5 {
                 color: #fff;
             }
             p {
                 width: 60%;
-                text-align: justify;
+                color: #fff;
                 hyphens: auto;
             }
         }
@@ -141,7 +143,6 @@
             margin-bottom: 2.5rem;
             display: block;
             .about-main-description {
-
                 width: 100%;
                 box-shadow: none;
                 padding-top: 2rem;
@@ -166,7 +167,7 @@
             
         }
         .about-history .about-history-wrapper {
-            width: 80%;
+            min-width: 80%;
             p{
                 width: 80%;
             }
