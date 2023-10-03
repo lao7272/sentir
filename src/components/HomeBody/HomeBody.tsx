@@ -51,7 +51,7 @@ export default function HomeBody() {
                 <h3>¿Que es sentir?</h3>
                 <div className='video-container'>
                     <video controls>
-                        <source src="/assets/gallery/home/sentir-agua-original.MP4" type="video/mp4" />
+                        <source src="/assets/gallery/home/sentir-video.mp4" type="video/mp4" />
                     </video>
                 </div>
             </div>

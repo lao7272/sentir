@@ -2,36 +2,15 @@
 
 .about {
     background: $mainColor;
-    min-height: 100vh;
-    overflow: hidden;
     .about-main {
         height: 100vh;
         overflow: hidden;
-        display: flex;
-        flex-direction: row-reverse;
         .about-main-img {
-            width: 60%;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-            }
-        }
-        .about-main-description {
-            width: 40%;
-            padding: 1rem 2rem;
-            display: grid;
-            place-content: center;
-            h3 {
-                font-size: $heading;
-                color: #fff;
-            }
-            p {
-                font-size: $subheading-2;
-            }
-        }
-        
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }      
     }
     .about-history {
         padding: 4rem 1rem;
@@ -64,9 +43,10 @@
         }
     }
     .about-slider {
-        height: 70vh;
+        height: 100vh;
         width: 80%;
-        margin: 5rem auto 7rem auto;
+        margin: 0 auto;
+        padding: 4rem 0 7rem 0;
         .slick-slide{
             display: flex;
             justify-content: center;
@@ -139,34 +119,7 @@
         
     }
     @media (max-width: 768px) {
-        .about-main {
-            min-height: 100vh;
-            margin-bottom: 2.5rem;
-            display: block;
-            .about-main-description {
-                width: 100%;
-                box-shadow: none;
-                padding-top: 2rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                h3 {
-                    font-size: 2.5rem;
-                    text-align: center;
-                }
-                p {
-                    font-size: $text;
-                    width: 70%;
-                }
-                
-            }
-            .about-main-img {
-                width: 100%;
-                height: 70vh;
-                overflow: hidden;
-            }
-            
-        }
+        
         .about-history .about-history-wrapper {
             min-width: 90%;
             p{

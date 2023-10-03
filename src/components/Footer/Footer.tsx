@@ -61,7 +61,7 @@ export default function Footer() {
                             <Link to="/comunidad">Comunidad</Link>
                         </li>
                         <li>
-                            <Link to="/nosotros">Nosotros</Link>
+                            <Link to="/nosotros">Historia</Link>
                         </li>
                     </ul>
                 </div>
