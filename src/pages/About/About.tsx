@@ -4,8 +4,7 @@ export default function About() {
     return (
         <div className="about">
             <div className="about-main">
-                <div className="about-main-img" style={{backgroundImage: "url(./assets/gallery/about/about-5.jpg)"}}></div>
-                {/* <img src="." alt="" /> */}
+                <div className="about-main-img" style={{backgroundImage: "url(./assets/gallery/about/about.jpg)"}}></div>
             </div>
             <div className="about-history">
                 <div className="about-history-wrapper">
