@@ -28,7 +28,7 @@ export default function Community() {
                 <button onClick={() => sectionFilter(1)} className={`community-section ${sectionIndex === 1 ? "active" : ""}`}>Sentir 2.0</button>
                 <button onClick={() => sectionFilter(2)} className={`community-section ${sectionIndex === 2 ? "active" : ""}`}>Sentir 3.0</button>
                 <button onClick={() => sectionFilter(3)} className={`community-section ${sectionIndex === 3 ? "active" : ""}`}>Sentir(nos)</button>
-                <button onClick={() => sectionFilter(4)} className={`community-section ${sectionIndex === 4 ? "active" : ""}`}>Sentir en Konsert</button>
+                <button onClick={() => sectionFilter(4)} className={`community-section ${sectionIndex === 4 ? "active" : ""}`}>Sentir en Konserta</button>
             </div>
             <div className="community-card-container">
                 {

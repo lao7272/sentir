@@ -18,7 +18,7 @@ const community:Section[] = [
     },
     
     {
-        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-1.jpg",
+        image: "./assets/gallery/community/sentir-konserta/sentir-konserta-1.jpg",
         section: 4
     },
     {
@@ -26,7 +26,7 @@ const community:Section[] = [
         section: 2
     },
     {
-        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-9.jpg",
+        image: "./assets/gallery/community/sentir-konserta/sentir-konserta-9.jpg",
         section: 4
     },
     {
@@ -42,7 +42,11 @@ const community:Section[] = [
         section: 2
     },
     {
-        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-7.jpg",
+        image: "./assets/gallery/community/sentir-konserta/sentir-konserta-7.jpg",
+        section: 4
+    },
+    {
+        image: "./assets/gallery/community/sentir-konserta/sentir-konserta-10.jpg",
         section: 4
     },
     {
@@ -78,6 +82,10 @@ const community:Section[] = [
         section: 3
     },
     {
+        image: "./assets/gallery/community/sentir-konserta/sentir-konserta-11.jpg",
+        section: 4
+    },
+    {
         image: "./assets/gallery/community/sentir-1/sentir-1.0-13.jpg",
         section: 0
     },
@@ -102,7 +110,7 @@ const community:Section[] = [
         section: 2
     },
     {
-        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-6.jpg",
+        image: "./assets/gallery/community/sentir-konserta/sentir-konserta-6.jpg",
         section: 4
     },
     {
@@ -122,7 +130,7 @@ const community:Section[] = [
         section: 0
     },
     {
-        image: "./assets/gallery/community/sentir-konsert/sentir-konsert-3.jpg",
+        image: "./assets/gallery/community/sentir-konserta/sentir-konserta-3.jpg",
         section: 4
     },
     {
