@@ -30,10 +30,6 @@ const community:Section[] = [
         section: 4
     },
     {
-        image: "./assets/gallery/community/sentir-nos/sentir-nos-1.jpg",
-        section: 3
-    },
-    {
         image: "./assets/gallery/community/sentir-nos/sentir-nos-6.JPG",
         section: 3
     },
@@ -72,6 +68,10 @@ const community:Section[] = [
     {
         image: "./assets/gallery/community/sentir-3/sentir-3.0-8.jpeg",
         section: 2
+    },
+    {
+        image: "./assets/gallery/community/sentir-konserta/sentir-konserta-2.jpg",
+        section: 4
     },
     {
         image: "./assets/gallery/community/sentir-1/sentir-1.0-8.jpg",

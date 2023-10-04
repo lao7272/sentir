@@ -5,7 +5,7 @@ export default function HomeBody() {
         <div className="home-body">
             <div className={`home-body-section ${inView ? "show" : "hidden"}`}>
                 <div>
-                    <h3>¿Que hacemos?</h3>
+                    <h3>¿Qué hacemos?</h3>
                     <div className="home-body-info" ref={ref}>
                         <p>
                             Sentir es existir es un evento  creado desde el amor,
@@ -31,7 +31,9 @@ export default function HomeBody() {
                     <h3>Arte</h3>
                     <p>
                         Sentir busca generar un espacio para conectar con el arte.
-                        y cuando hablamos de conexión,
+                    </p>
+                    <p>
+                        Cuando hablamos de conexión,
                         es poder observar, registrar, mirar todos los ángulos.
                     </p>
                     <p>
@@ -48,7 +50,7 @@ export default function HomeBody() {
                 </div>
             </div>
             <div className="video-section">
-                <h3>¿Que es sentir?</h3>
+                <h3>¿Qué es sentir?</h3>
                 <div className='video-container'>
                     <video controls>
                         <source src="/assets/gallery/home/sentir-video.mp4" type="video/mp4" />
