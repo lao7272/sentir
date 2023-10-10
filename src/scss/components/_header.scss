@@ -98,7 +98,7 @@
         align-self: flex-end;
         transition: all var(--animation-timing);
         padding-top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
-        background-color: #fff7ed;
+        background-color: $quaternaryColor;
         width: 100%;
         min-height: 100vh;
         position: fixed;
@@ -192,7 +192,7 @@
     background-color: $mainColor;
 }
 .navbar-alt.scrolled {
-    background-color: #fff7ed;
+    background-color: $quaternaryColor;
 }
 .brand-logo {
     text-decoration: none;

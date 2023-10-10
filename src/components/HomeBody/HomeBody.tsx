@@ -75,11 +75,16 @@ export default function HomeBody() {
                         <p>
                             En fin… ¿Nos encontramos para disfrutar(nos)?
                         </p>
-
                     </div>
                     <div className="exp-img">
                         <img src="./assets/gallery/home/experience.jpeg" alt="" />
                     </div>
+                </div>
+            </div>
+            <div className="sponsors-section">
+                <h3>Nos acompañan</h3>
+                <div className="sponsors">
+                    <img src="./assets/sponsors/sponsor-1.jpg" alt="" />
                 </div>
             </div>
         </div>

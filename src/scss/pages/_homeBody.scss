@@ -150,6 +150,26 @@
             }
         }
     }
+    .sponsors-section {
+        padding: 5rem 0;
+        min-height: 80vh;
+        width: 100%;
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            color: #fff;
+        }
+        .sponsors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            img {
+                width: 350px;
+                margin: 0 auto;
+            }
+        }
+    }
     @media (max-width: 768px) {
         padding-top: 5rem;
         p {
