@@ -26,7 +26,7 @@ export default function Footer() {
                     <h4>Contacto</h4>
                     <ul className='flex-row'>
                         <li>
-                            <a className='footer-social' href="mailTo: tinyiriart@gmail.com">
+                            <a className='footer-social' href="mailTo: sentiresexistir@gmail.com">
                                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 330.001 330.001">
                                     <g id="XMLID_348_">

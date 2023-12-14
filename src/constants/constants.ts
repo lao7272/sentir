@@ -1,11 +1,14 @@
 import {Section} from '../types/types'
 const homeSlider:string[] = [
     "/assets/gallery/home/slider/main-1.jpg",
+    "/assets/gallery/home/slider/main-9.jpg",
     "/assets/gallery/home/slider/main-4.jpg",
+    "/assets/gallery/home/slider/main-6.jpg",
+    "/assets/gallery/home/slider/main-8.jpg",
     "/assets/gallery/home/slider/main-3.jpg",
     "/assets/gallery/home/slider/main-2.JPG",
     "/assets/gallery/home/slider/main-5.JPG",
-    "/assets/gallery/home/slider/main-6.JPG",
+    "/assets/gallery/home/slider/main-7.jpg",
 ];
 const community:Section[] = [
     {
@@ -26,6 +29,10 @@ const community:Section[] = [
         section: 2
     },
     {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-1.JPG",
+        section: 5
+    },
+    {
         image: "./assets/gallery/community/sentir-konserta/sentir-konserta-9.jpg",
         section: 4
     },
@@ -42,6 +49,10 @@ const community:Section[] = [
         section: 4
     },
     {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-4.jpg",
+        section: 5
+    },
+    {
         image: "./assets/gallery/community/sentir-konserta/sentir-konserta-10.jpg",
         section: 4
     },
@@ -52,6 +63,10 @@ const community:Section[] = [
     {
         image: "./assets/gallery/community/sentir-nos/sentir-nos-4.JPG",
         section: 3
+    },
+    {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-11.jpg",
+        section: 5
     },
     {
         image: "./assets/gallery/community/sentir-2/sentir-2.0-1.jpg",
@@ -66,6 +81,10 @@ const community:Section[] = [
         section: 0
     },
     {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-10.jpg",
+        section: 5
+    },    
+    {
         image: "./assets/gallery/community/sentir-3/sentir-3.0-8.jpeg",
         section: 2
     },
@@ -76,6 +95,10 @@ const community:Section[] = [
     {
         image: "./assets/gallery/community/sentir-1/sentir-1.0-8.jpg",
         section: 0
+    },
+    {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-3.JPG",
+        section: 5
     },
     {
         image: "./assets/gallery/community/sentir-nos/sentir-nos-5.JPG",
@@ -98,6 +121,10 @@ const community:Section[] = [
         section: 0
     },
     {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-9.JPG",
+        section: 5
+    },
+    {
         image: "./assets/gallery/community/sentir-2/sentir-2.0-6.jpg",
         section: 1
     },
@@ -110,12 +137,24 @@ const community:Section[] = [
         section: 2
     },
     {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-2.JPG",
+        section: 5
+    },
+    {
         image: "./assets/gallery/community/sentir-konserta/sentir-konserta-6.jpg",
         section: 4
     },
     {
         image: "./assets/gallery/community/sentir-3/sentir-3.0-2.jpeg",
         section: 2
+    },
+    {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-5.jpg",
+        section: 5
+    },
+    {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-6.jpg",
+        section: 5
     },
     {
         image: "./assets/gallery/community/sentir-3/sentir-3.0-14.jpeg",
@@ -138,12 +177,20 @@ const community:Section[] = [
         section: 0
     },
     {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-12.JPG",
+        section: 5
+    },
+    {
         image: "./assets/gallery/community/sentir-2/sentir-2.0-11.jpg",
         section: 1
     },
     {
         image: "./assets/gallery/community/sentir-3/sentir-3.0-9.jpeg",
         section: 2
+    },
+    {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-8.jpg",
+        section: 5
     },
     {
         image: "./assets/gallery/community/sentir-1/sentir-1.0-15.jpg",
@@ -161,6 +208,10 @@ const community:Section[] = [
     {
         image: "./assets/gallery/community/sentir-3/sentir-3.0-5.jpeg",
         section: 2
+    },
+    {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-13.JPG",
+        section: 5
     },
     {
         image: "./assets/gallery/community/sentir-2/sentir-2.0-10.jpg",
@@ -182,7 +233,10 @@ const community:Section[] = [
         image: "./assets/gallery/community/sentir-1/sentir-1.0-10.jpg",
         section: 0
     },
-    
+    {
+        image: "./assets/gallery/community/aniversario-sentir/aniversario-7.jpg",
+        section: 5
+    },
 ];
 export {
     homeSlider, 
